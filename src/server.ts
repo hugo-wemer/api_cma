@@ -9,6 +9,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
+import { getTokenRoute } from './routes/get-token-route'
 import { subscribeNewTokenRoute } from './routes/subscribe-new-token-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
@@ -31,6 +32,7 @@ app.register(fastifySwaggerUi, {
   routePrefix: '/docs',
 })
 
+app.register(getTokenRoute)
 app.register(subscribeNewTokenRoute)
 
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
