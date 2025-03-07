@@ -6,6 +6,7 @@ interface UpdateTokenParams {
 }
 
 export async function updateToken({ accessToken }: UpdateTokenParams) {
+  await db.delete(token)
   await db.insert(token).values({
     accessToken,
   })
