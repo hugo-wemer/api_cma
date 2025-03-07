@@ -9,7 +9,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
-import { subscribeNewTokenRoute } from './routes/token-route'
+import { subscribeNewTokenRoute } from './routes/subscribe-new-token-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 

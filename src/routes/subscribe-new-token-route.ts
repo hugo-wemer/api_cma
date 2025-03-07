@@ -1,5 +1,6 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
+import { updateToken } from '../functions/update-token'
 
 export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
   app.post(
@@ -13,17 +14,16 @@ export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
           accessToken: z.string(),
         }),
         response: {
-          201: z.object({
-            accessToken: z.string(),
-          }),
+          201: z.null(),
         },
       },
     },
     async (request, reply) => {
       const { accessToken } = request.body
-      return reply.status(201).send({
+      await updateToken({
         accessToken,
       })
+      return reply.status(201).send()
     }
   )
 }
