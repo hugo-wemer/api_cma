@@ -8,6 +8,13 @@
       "when": 1741370330238,
       "tag": "0000_first_sentinel",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1742222473965,
+      "tag": "0001_true_mathemanic",
+      "breakpoints": true
     }
   ]
 }
