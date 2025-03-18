@@ -4,8 +4,27 @@ export async function getRegistries() {
   const companyWithRelations = await db.query.companies.findMany({
     with: {
       regionals: {
+        columns: {
+          companyOwnerId: false,
+        },
         with: {
-          installations: true,
+          installations: {
+            columns: {
+              regionalOwnerId: false,
+            },
+            with: {
+              assets: {
+                columns: {
+                  installationOwnerId: false,
+                },
+                //with: {
+                // assets:{
+                //   columns:{
+                //     assetOwnerId: false
+                //   }
+              },
+            },
+          },
         },
       },
     },

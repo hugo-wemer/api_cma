@@ -22,6 +22,13 @@
       "when": 1742301624003,
       "tag": "0002_thick_namorita",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1742307250494,
+      "tag": "0003_silky_texas_twister",
+      "breakpoints": true
     }
   ]
 }

@@ -5,11 +5,11 @@ import { installations } from './installations'
 
 export const regionals = pgTable('regionals', {
   id: text('id').primaryKey(),
+  regionalName: text('regional_name').notNull(),
+  regionalSlug: text('regional_slug').notNull(),
   companyOwnerId: text('company_owner_id').references(() => companies.id, {
     onDelete: 'set null',
   }),
-  regionalName: text('regional_name').notNull(),
-  regionalSlug: text('regional_slug').notNull(),
 })
 
 export const regionalsRelations = relations(regionals, ({ one, many }) => ({
