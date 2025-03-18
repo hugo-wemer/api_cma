@@ -5,9 +5,9 @@ import { regionals } from './regionals'
 export const companies = pgTable('companies', {
   id: text('id').primaryKey(),
   companyName: text('company_name').notNull(),
-  companySlug: text('company_slug').notNull()
+  companySlug: text('company_slug').notNull(),
 })
 
-export const companiesRelations = relations(companies, ({many}) => ({
-  regionals: many(regionals)
+export const companiesRelations = relations(companies, ({ many }) => ({
+  regionals: many(regionals),
 }))

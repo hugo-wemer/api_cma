@@ -1,4 +1,5 @@
 import { db } from '../drizzle/client'
+import { installations } from '../drizzle/schema'
 import { token } from '../drizzle/schema/token'
 
 export async function getToken() {

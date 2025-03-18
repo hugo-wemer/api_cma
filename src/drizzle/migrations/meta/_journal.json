@@ -15,6 +15,13 @@
       "when": 1742222473965,
       "tag": "0001_true_mathemanic",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1742301624003,
+      "tag": "0002_thick_namorita",
+      "breakpoints": true
     }
   ]
 }

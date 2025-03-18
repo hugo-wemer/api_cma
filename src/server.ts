@@ -9,6 +9,8 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
+import { getRegistries } from './functions/get-registries'
+import { getRegistriesRoute } from './routes/get-registries-route'
 import { getTokenRoute } from './routes/get-token-route'
 import { subscribeNewTokenRoute } from './routes/subscribe-new-token-route'
 
@@ -34,6 +36,7 @@ app.register(fastifySwaggerUi, {
 
 app.register(getTokenRoute)
 app.register(subscribeNewTokenRoute)
+app.register(getRegistriesRoute)
 
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
   console.log('HTTP server running 🚀')
