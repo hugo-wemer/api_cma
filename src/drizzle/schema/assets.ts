@@ -1,6 +1,7 @@
 import { relations } from 'drizzle-orm'
 import { pgTable, text } from 'drizzle-orm/pg-core'
 import { installations } from './installations'
+import { sensors } from './sensors'
 
 export const assets = pgTable('assets', {
   id: text('id').primaryKey(),
@@ -14,9 +15,10 @@ export const assets = pgTable('assets', {
   ),
 })
 
-export const assetRelations = relations(assets, ({ one }) => ({
+export const assetRelations = relations(assets, ({ one, many }) => ({
   installation: one(installations, {
     fields: [assets.installationOwnerId],
     references: [installations.id],
   }),
+  sensors: many(sensors),
 }))

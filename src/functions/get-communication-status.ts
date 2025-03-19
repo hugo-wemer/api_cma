@@ -1,7 +1,11 @@
 import { db } from '../drizzle/client'
+import { eq } from 'drizzle-orm'
+import { companies } from '../drizzle/schema'
 
-export async function getRegistries() {
-  const companyWithRelations = await db.query.companies.findMany({
+
+export async function getCommunicationStatus(companySlug: string) {
+  const companyCommunicationStatus = await db.query.companies.findMany({
+    where: eq(companies.companySlug, companySlug),
     with: {
       regionals: {
         columns: {
@@ -21,6 +25,13 @@ export async function getRegistries() {
                   sensors: {
                     columns: {
                       assetOwnerId: false
+                    },
+                    with: {
+                        sensorsCommunication:{
+                            columns:{
+                                sensorOwnerId: false
+                            }
+                        }
                     }
                   }
                 }
@@ -31,5 +42,5 @@ export async function getRegistries() {
       },
     },
   })
-  return { companyWithRelations }
+  return { companyCommunicationStatus }
 }
