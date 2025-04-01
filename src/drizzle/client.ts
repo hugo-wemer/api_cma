@@ -12,6 +12,7 @@ async function main() {
   console.log('🔄 Resetando tabelas...')
   // Reset na ordem reversa para respeitar FK
   await db.delete(schema.sensorsCommunication)
+  await db.delete(schema.sensorsAlarms)
   await db.delete(schema.sensors)
   await db.delete(schema.assets)
   await db.delete(schema.installations)
@@ -115,6 +116,19 @@ async function main() {
     },
     {
       status: 'Ativo',
+      sensorOwnerId: '61d38ce6-79b8-4a81-a22e-5496b3919460',
+    },
+  ])
+
+  await db.insert(schema.sensorsAlarms).values([
+    {
+      condition: 'Inativo',
+      recognition: 'Reconhecido',
+      sensorOwnerId: 'ac732d76-ef4b-4ff7-8ebb-015bf9867551',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
       sensorOwnerId: '61d38ce6-79b8-4a81-a22e-5496b3919460',
     },
   ])

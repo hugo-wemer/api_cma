@@ -10,11 +10,11 @@ import {
 } from 'fastify-type-provider-zod'
 import { env } from './env'
 import { getRegistries } from './functions/get-registries'
+import { getCommunicationStatusRoute } from './routes/get-communication-status-route'
 import { getRegistriesRoute } from './routes/get-registries-route'
+import { getStatusRoute } from './routes/get-status-route'
 import { getTokenRoute } from './routes/get-token-route'
 import { subscribeNewTokenRoute } from './routes/subscribe-new-token-route'
-import { getCommunicationStatus } from './functions/get-communication-status'
-import { getCommunicationStatusRoute } from './routes/get-communication-status-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -40,6 +40,7 @@ app.register(getTokenRoute)
 app.register(subscribeNewTokenRoute)
 app.register(getRegistriesRoute)
 app.register(getCommunicationStatusRoute)
+app.register(getStatusRoute)
 
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
   console.log('HTTP server running 🚀')

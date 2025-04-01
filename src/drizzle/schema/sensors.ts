@@ -1,6 +1,7 @@
 import { relations } from 'drizzle-orm'
 import { pgTable, text } from 'drizzle-orm/pg-core'
 import { assets } from './assets'
+import { sensorsAlarms } from './sensors-alarms'
 import { sensorsCommunication } from './sensors-communication'
 import { sensorsRegistries } from './sensors-registries'
 
@@ -26,5 +27,12 @@ export const sensorRelations = relations(sensors, ({ one }) => ({
     fields: [sensors.sensorRegistryId],
     references: [sensorsRegistries.id],
   }),
-  sensorsCommunication: one(sensorsCommunication),
+  sensorAlarm: one(sensorsAlarms, {
+    fields: [sensors.id],
+    references: [sensorsAlarms.sensorOwnerId],
+  }),
+  sensorCommunication: one(sensorsCommunication, {
+    fields: [sensors.id],
+    references: [sensorsCommunication.sensorOwnerId],
+  }),
 }))
