@@ -14,14 +14,15 @@ export const getTokenRoute: FastifyPluginAsyncZod = async app => {
         response: {
           200: z.object({
             accessToken: z.string(),
+            refreshToken: z.string(),
             updatedAt: z.date(),
           }),
         },
       },
     },
     async (request, reply) => {
-      const { accessToken, updatedAt } = await getToken()
-      return reply.status(200).send({ accessToken, updatedAt })
+      const { accessToken, refreshToken, updatedAt } = await getToken()
+      return reply.status(200).send({ accessToken, refreshToken, updatedAt })
     }
   )
 }

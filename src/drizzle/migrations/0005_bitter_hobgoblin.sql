@@ -1,0 +1,1 @@
+ALTER TABLE "token" ADD COLUMN "refresh_token" text NOT NULL;
