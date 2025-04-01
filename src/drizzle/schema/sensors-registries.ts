@@ -1,6 +1,7 @@
 import { relations } from 'drizzle-orm'
 import { pgTable, text } from 'drizzle-orm/pg-core'
 import { sensors } from './sensors'
+import { variables } from './variables'
 
 export const sensorsRegistries = pgTable('sensors-registries', {
   id: text('id').primaryKey(),
@@ -8,3 +9,10 @@ export const sensorsRegistries = pgTable('sensors-registries', {
   sensorSlug: text('sensor_slug').notNull(),
   sensorShowName: text('sensor_show_name').notNull(),
 })
+
+export const sensorRegistryRelations = relations(
+  sensorsRegistries,
+  ({ many }) => ({
+    variables: many(variables),
+  })
+)
