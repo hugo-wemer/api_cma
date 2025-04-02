@@ -89,10 +89,58 @@ async function main() {
       sensorShowName: 'BM',
     },
     {
+      id: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      sensorName: 'TM1 - Monitor de Temperatura do Óleo e Enrolamentos',
+      sensorSlug: 'tm',
+      sensorShowName: 'TM',
+    },
+    {
       id: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
       sensorName: 'AVR - Relé Regulador de Tensão',
       sensorSlug: 'avr',
       sensorShowName: 'AVR',
+    },
+    {
+      id: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      sensorName: 'GMP - Sensor Gás e Umidade Dissolvidos no Óleo Isolante',
+      sensorSlug: 'gmp',
+      sensorShowName: 'GMP',
+    },
+    {
+      id: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      sensorName: 'IDM - Monitor para Torque Comutador',
+      sensorSlug: 'idm',
+      sensorShowName: 'IDM',
+    },
+    {
+      id: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      sensorName: 'DM1 - Módulo de Aquisição de Dados',
+      sensorSlug: 'dm1',
+      sensorShowName: 'DM1',
+    },
+    {
+      id: '7711B6EB-34AC-4D01-86C1-0164197C18BE',
+      sensorName: 'DM2 - Módulo de Aquisição de Dados',
+      sensorSlug: 'dm2',
+      sensorShowName: 'DM2',
+    },
+    {
+      id: 'D8DCE90E-FEC0-48B5-850A-70075616565B',
+      sensorName: 'MO - Monitor de Umidade',
+      sensorSlug: 'mo',
+      sensorShowName: 'MO',
+    },
+    {
+      id: '4A6912FE-9B6D-4107-8878-36B2B4CD83CC',
+      sensorName: 'PI - Indicador de Posição',
+      sensorSlug: 'pi',
+      sensorShowName: 'PI',
+    },
+    {
+      id: '715EDC30-DD80-4A7E-9771-AD419DF8782E',
+      sensorName: 'SPS - Supervisor de Paralelismo',
+      sensorSlug: 'sps',
+      sensorShowName: 'SPS',
     },
   ])
 
@@ -137,6 +185,401 @@ async function main() {
     {
       accessToken: 'kkkEaeMen',
       refreshToken: 'kkkEaeMennnn',
+    },
+  ])
+
+  await db.insert(schema.variables).values([
+    // TM
+    {
+      id: '1d4a92cc5e3946a691f6a39c56497399',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Parâmetro de alarme por temperatura do óleo',
+      unit: '°C',
+      component: 'oil',
+      function: 'high-alarm',
+    },
+    {
+      id: 'f8e3fe965f764be2a8bfc08352f114da',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Indicação de temperatura do óleo',
+      unit: '°C',
+      component: 'oil',
+      function: 'indication',
+    },
+    {
+      id: 'c118a2b845f743318976bb6a8328993d',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Parâmetro de alarme por temperatura do enrolamento 1',
+      unit: '°C',
+      component: 'winding',
+      function: 'high-alarm',
+    },
+    {
+      id: 'cf29c51f4eee4d4985c858e614f2622b',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Indicação de temperatura do enrolamento 1',
+      unit: '°C',
+      component: 'winding',
+      function: 'indication',
+    },
+    {
+      id: 'fe2db1ff278b4005bc6a36922822572a',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Indicação de estado do relé do grupo de resfriamento 1',
+      component: 'forced-cooling-1',
+      function: 'indication',
+    },
+    {
+      id: 'ec0df536567d47c9a783897ddb7e8855',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Indicação de estado do relé do grupo de resfriamento 2',
+      component: 'forced-cooling-2',
+      function: 'indication',
+    },
+    {
+      id: '859d2a2ab8cd43f08dd23c73c217d80d',
+      sensorRegistriesId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      variableName: 'Indicação de percentual de carga do enrolamento 1',
+      component: 'load',
+      function: 'indication',
+    },
+
+    // AVR
+    {
+      id: '6ffe866d25204965bef648060cb3d608',
+      sensorRegistriesId: '78B5F19A-C1E2-4087-AA1D-08C21EA9ED0D',
+      variableName: 'Indicação de tensão de linha',
+      unit: 'kV',
+      component: 'voltage',
+      function: 'indication',
+    },
+
+    // BM
+    {
+      id: 'f9769e503c16487cb2161514d0772166',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de capacitância - Conjunto 1 - Fase A',
+      unit: 'pF',
+      component: 'capacitance-phase-a',
+      function: 'indication',
+    },
+    {
+      id: 'ec004a8d19534df28850a7da6d590ef2',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de tangente delta - Conjunto 1 - Fase A',
+      unit: '%',
+      component: 'delta-tangent-phase-a',
+      function: 'indication',
+    },
+    {
+      id: '36e188cbb3784f909dc69e16374f93c0',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de corrente de fuga - Conjunto 1 - Fase A',
+      unit: 'mA',
+      component: 'leak-current-phase-a',
+      function: 'indication',
+    },
+    {
+      id: '01d1e0cadd59414aa95dd9787ea595f9',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de capacitância - Conjunto 1 - Fase B',
+      unit: 'pF',
+      component: 'capacitance-phase-b',
+      function: 'indication',
+    },
+    {
+      id: 'a244216e0f244ac7afc5e19d0669a436',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de tangente delta - Conjunto 1 - Fase B',
+      unit: '%',
+      component: 'delta-tangent-phase-b',
+      function: 'indication',
+    },
+    {
+      id: '6299f1aa1b6e4016ba1020ff38821c78',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de corrente de fuga - Conjunto 1 - Fase B',
+      unit: 'mA',
+      component: 'leak-current-phase-b',
+      function: 'indication',
+    },
+    {
+      id: '1f8f9f18eb5a4605bb061178e8e9b687',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de capacitância - Conjunto 1 - Fase C',
+      unit: 'pF',
+      component: 'capacitance-phase-c',
+      function: 'indication',
+    },
+    {
+      id: '6f9101e8c2de48e1811d9eee740ec037',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de tangente delta - Conjunto 1 - Fase C',
+      unit: '%',
+      component: 'delta-tangent-phase-c',
+      function: 'indication',
+    },
+    {
+      id: '85be58b0b5b647d4ba9191235de0553f',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName: 'Indicação de corrente de fuga - Conjunto 1 - Fase C',
+      unit: 'mA',
+      component: 'leak-current-phase-c',
+      function: 'indication',
+    },
+    {
+      id: 'd5e889823b27445a8003abcf89632ce6',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por capacitância - Alta - Conjunto 1 - Fase A',
+      unit: 'pF',
+      component: 'capacitance-phase-a',
+      function: 'high-alarm',
+    },
+    {
+      id: 'fcf9e286820a4c22a403223f920a14ae',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por tangente delta - Alta - Conjunto 1 - Fase A',
+      unit: '%',
+      component: 'delta-tangent-phase-a',
+      function: 'high-alarm',
+    },
+    {
+      id: 'd6cac577e4d447dc8ea223e0fed485eb',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por corrente de fuga - Alta - Conjunto 1 - Fase A',
+      unit: 'mA',
+      component: 'leak-current-phase-a',
+      function: 'high-alarm',
+    },
+    {
+      id: 'fad973b4f7094dd191c1384fdd129847',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por capacitância - Alta - Conjunto 1 - Fase B',
+      unit: 'pF',
+      component: 'capacitance-phase-b',
+      function: 'high-alarm',
+    },
+    {
+      id: 'bae4f28b5b0e4c4da3b4cd149dcd20ef',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por tangente delta - Alta - Conjunto 1 - Fase B',
+      unit: '%',
+      component: 'delta-tangent-phase-b',
+      function: 'high-alarm',
+    },
+    {
+      id: 'bbfd972029fc46ee923669c45c671fc0',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por corrente de fuga - Alta - Conjunto 1 - Fase B',
+      unit: 'mA',
+      component: 'leak-current-phase-b',
+      function: 'high-alarm',
+    },
+    {
+      id: '25391e8535754989b572a9c504435883',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por capacitância - Alta - Conjunto 1 - Fase C',
+      unit: 'pF',
+      component: 'capacitance-phase-c',
+      function: 'high-alarm',
+    },
+    {
+      id: '12e7d300ba0447228b13a35483d1a980',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por tangente delta - Alta - Conjunto 1 - Fase C',
+      unit: '%',
+      component: 'delta-tangent-phase-c',
+      function: 'high-alarm',
+    },
+    {
+      id: '1f5f76165f684ad98e34d842fab4a44e',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de alarme por corrente de fuga - Alta - Conjunto 1 - Fase C',
+      unit: 'mA',
+      component: 'leak-current-phase-c',
+      function: 'high-alarm',
+    },
+    {
+      id: 'd147bafd04fe476190cbeb91d4a81fec',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de capacitância - Conjunto 1 - Fase A',
+      unit: 'pF',
+      component: 'capacitance-phase-a',
+      function: 'initial',
+    },
+    {
+      id: '128e647453234842af4089d389c2a95f',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de tangente delta - Conjunto 1 - Fase A',
+      unit: '%',
+      component: 'delta-tangent-phase-a',
+      function: 'initial',
+    },
+    {
+      id: '6e5ec546f0b54182932608ec1b54081c',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de capacitância - Conjunto 1 - Fase B',
+      unit: 'pF',
+      component: 'capacitance-phase-b',
+      function: 'initial',
+    },
+    {
+      id: 'f68030da69ff44a8b8b58260205486d9',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de tangente delta - Conjunto 1 - Fase B',
+      unit: '%',
+      component: 'delta-tangent-phase-b',
+      function: 'initial',
+    },
+    {
+      id: 'd48052e2b04f4b138fe32b1e86ac5e30',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de capacitância - Conjunto 1 - Fase C',
+      unit: 'pF',
+      component: 'capacitance-phase-c',
+      function: 'initial',
+    },
+    {
+      id: '1ee4380ce4494aafad065819e92b6d84',
+      sensorRegistriesId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      variableName:
+        'Parâmetro de valor inicial de tangente delta - Conjunto 1 - Fase C',
+      unit: '%',
+      component: 'delta-tangent-phase-c',
+      function: 'initial',
+    },
+
+    // GMP
+    {
+      id: 'e6f6208a761a49c3b9587651f1f6fdde',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Indicação de concentração de H2',
+      unit: 'ppm',
+      component: 'hydrogen',
+      function: 'indication',
+    },
+    {
+      id: '8181366ce73d4aa9a144b7f5db6d6076',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Parâmetro de alarme por concentração de H2 - Alta',
+      unit: 'ppm',
+      component: 'hydrogen',
+      function: 'high-alarm',
+    },
+    {
+      id: '09c4f48051ed4da0bd5415ce145f74bd',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Indicação de teor de H2O',
+      unit: 'ppm',
+      component: 'moisture',
+      function: 'indication',
+    },
+    {
+      id: '7c83cd8a08cc4a609e24a46ab7a0a94f',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Parâmetro de alarme por teor de H2O - Alto',
+      unit: 'ppm',
+      component: 'moisture',
+      function: 'high-alarm',
+    },
+    {
+      id: 'aac7aa182b6541098e7f4373adc93103',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Indicação de saturação relativa',
+      unit: '%',
+      component: 'relative-saturation',
+      function: 'indication',
+    },
+    {
+      id: '8be705c3d8a94a27a94da560bcbdc0b0',
+      sensorRegistriesId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      variableName: 'Parâmetro de alarme por saturação relativa - Alta',
+      unit: '%',
+      component: 'relative-saturation',
+      function: 'high-alarm',
+    },
+
+    // IDM
+    {
+      id: '201355ad584146b4b3183e9304b3d4e0',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Indicação de tensão do motor - Fase A',
+      unit: 'V',
+      component: 'voltage-phase-a',
+      function: 'indication',
+    },
+    {
+      id: '32da8924fa7d4646801f3e9130a7bf7b',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Indicação de tensão do motor - Fase B',
+      unit: 'V',
+      component: 'voltage-phase-b',
+      function: 'indication',
+    },
+    {
+      id: '5d197b61fc8e414397555b3f52b878da',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Indicação de tensão do motor - Fase C',
+      unit: 'V',
+      component: 'voltage-phase-c',
+      function: 'indication',
+    },
+    {
+      id: '7f0cd6033c9443769c8fbc005168c9d6',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Parâmetro manual de alarme por tensão do motor - Baixa',
+      unit: 'V',
+      component: 'voltage',
+      function: 'low-alarm',
+    },
+    {
+      id: 'f9e2113c7bda426084033c9bcbe34fda',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Parâmetro manual de alarme por tensão do motor - Alta',
+      unit: 'V',
+      component: 'voltage',
+      function: 'high-alarm',
+    },
+
+    // MO
+    {
+      id: 'ae07405d759643c9a1a0c3f06fd8948a',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Indicação de teor de água',
+      unit: 'ppm',
+      component: 'moisture',
+      function: 'indication',
+    },
+    {
+      id: '2157aa58c3724d3b852f5ca484b447c5',
+      sensorRegistriesId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6',
+      variableName: 'Indicação de saturação relativa',
+      unit: '%',
+      component: 'relative-saturation',
+      function: 'indication',
+    },
+
+    // SPS
+    {
+      id: 'c467a4b06a4f44b2808b89312927577f',
+      sensorRegistriesId: '715EDC30-DD80-4A7E-9771-AD419DF8782E',
+      variableName: 'SPS3 : Indicação de posição de tap',
+      component: 'tap',
+      function: 'indication',
     },
   ])
 

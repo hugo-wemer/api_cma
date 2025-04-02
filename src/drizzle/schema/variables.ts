@@ -13,7 +13,7 @@ export const variables = pgTable('variables', {
     }),
   variableName: text('variable_name').notNull(),
   unit: text('unit'),
-  type: text('type').notNull(),
+  component: text('component').notNull(),
   function: text('function').notNull(),
 })
 
