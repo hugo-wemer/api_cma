@@ -5,78 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1741370330238,
-      "tag": "0000_first_sentinel",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1742222473965,
-      "tag": "0001_true_mathemanic",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1742301624003,
-      "tag": "0002_thick_namorita",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1742307250494,
-      "tag": "0003_silky_texas_twister",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1742391781904,
-      "tag": "0004_heavy_carnage",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1743171361422,
-      "tag": "0005_bitter_hobgoblin",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "7",
-      "when": 1743174736989,
-      "tag": "0006_clumsy_fabian_cortez",
-      "breakpoints": true
-    },
-    {
-      "idx": 7,
-      "version": "7",
-      "when": 1743517426770,
-      "tag": "0007_fancy_joseph",
-      "breakpoints": true
-    },
-    {
-      "idx": 8,
-      "version": "7",
-      "when": 1743537188565,
-      "tag": "0008_smiling_swordsman",
-      "breakpoints": true
-    },
-    {
-      "idx": 9,
-      "version": "7",
-      "when": 1743538361864,
-      "tag": "0009_thankful_punisher",
-      "breakpoints": true
-    },
-    {
-      "idx": 10,
-      "version": "7",
-      "when": 1743601725099,
-      "tag": "0010_secret_plazm",
+      "when": 1743685188174,
+      "tag": "0000_magenta_lilandra",
       "breakpoints": true
     }
   ]
