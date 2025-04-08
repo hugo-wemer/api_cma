@@ -12,6 +12,7 @@ export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
           'Atualiza o token que pode ser usado em outras requisições para o Sigma ECM.',
         body: z.object({
           accessToken: z.string(),
+          refreshToken: z.string()
         }),
         response: {
           201: z.null(),
@@ -19,9 +20,10 @@ export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
       },
     },
     async (request, reply) => {
-      const { accessToken } = request.body
+      const { accessToken, refreshToken } = request.body
       await updateToken({
         accessToken,
+        refreshToken
       })
       return reply.status(201).send()
     }

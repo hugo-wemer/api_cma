@@ -1,7 +1,6 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 import { getToken } from '../functions/get-token'
-import { updateToken } from '../functions/update-token'
 
 export const getTokenRoute: FastifyPluginAsyncZod = async app => {
   app.get(

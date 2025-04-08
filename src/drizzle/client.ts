@@ -12,6 +12,7 @@ export const db = drizzle(pg, {
 async function main() {
   console.log('🔄 Resetando tabelas...')
   // Reset na ordem reversa para respeitar FK
+  await db.delete(schema.onlineValues)
   await db.delete(schema.sensorsCommunication)
   await db.delete(schema.sensorsAlarms)
   await db.delete(schema.sensors)
