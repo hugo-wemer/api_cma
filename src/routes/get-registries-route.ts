@@ -1,6 +1,6 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
-import { z } from 'zod'
 import { getRegistries } from '../functions/get-registries'
+import { getRegistriesResponseSchema } from '../types'
 
 export const getRegistriesRoute: FastifyPluginAsyncZod = async app => {
   app.get(
@@ -10,7 +10,7 @@ export const getRegistriesRoute: FastifyPluginAsyncZod = async app => {
         tags: ['Registros'],
         summary: 'Consulta a hierarquia do Sigma.',
         response: {
-          200: z.any(),
+          200: getRegistriesResponseSchema
         },
       },
     },

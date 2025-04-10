@@ -99,6 +99,60 @@ export const getOnlineValuesResponseSchema = z.object({
   )
 })
 
+export const getRegistriesResponseSchema = z.object({
+  companyWithRelations: z.array(
+    z.object({
+      id: z.string(),
+      companyName: z.string(),
+      companySlug: z.string(),
+      regionals: z.array(
+        z.object({
+          id: z.string(),
+          regionalName: z.string(),
+          regionalSlug: z.string(),
+          installations: z.array(
+            z.object({
+              id: z.string(),
+              installationName: z.string(),
+              installationSlug: z.string(),
+              assets: z.array(
+                z.object({
+                  id: z.string(),
+                  assetName: z.string(),
+                  assetSlug: z.string(),
+                  sensors: z.array(
+                    z.object({
+                      id: z.string(),
+                      sensorRegistry: z.object({
+                        sensorName: z.string(),
+                        sensorSlug: z.string(),
+                        sensorShowName: z.string(),
+                      }).nullish()
+                    })
+                  ).nullable()
+                })
+              )
+            })
+          )
+        })
+      )
+    })
+  )
+})
+
+export const getVariablesSchema = z.object({
+  variables: z.array(
+    z.object({
+      id: z.string(),
+			sensorRegistriesId: z.string(),
+			variableName: z.string(),
+			unit: z.string().nullable(),
+			component: z.string(),
+			function: z.string(),
+    })
+  )
+})
+
 
 
 export type subscribeNewTokenRequestType = z.infer<typeof subscribeNewTokenRequestSchema>

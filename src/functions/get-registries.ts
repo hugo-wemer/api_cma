@@ -19,8 +19,15 @@ export async function getRegistries() {
                 },
                 with: {
                   sensors: {
+                    with:{
+                      sensorsRegistry: {
+                        columns:{
+                          id: false
+                        }
+                      }
+                    },
                     columns: {
-                      assetOwnerId: false
+                      id: true,
                     }
                   }
                 }

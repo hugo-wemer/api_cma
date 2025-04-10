@@ -1,6 +1,7 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 import { getVariables } from '../functions/get-variables'
+import { getVariablesSchema } from '../types'
 
 export const getVariablesRoute: FastifyPluginAsyncZod = async app => {
   app.get(
@@ -10,7 +11,7 @@ export const getVariablesRoute: FastifyPluginAsyncZod = async app => {
         tags: ['Registros'],
         summary: 'Consulta as variáveis definidas para cada sensor.',
         response: {
-          200: z.any(),
+          200: getVariablesSchema
         },
       },
     },
