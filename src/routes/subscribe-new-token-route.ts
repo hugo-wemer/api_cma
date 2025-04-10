@@ -1,6 +1,7 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 import { updateToken } from '../functions/update-token'
+import { subscribeNewTokenRequestSchema } from '../types'
 
 export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
   app.post(
@@ -10,10 +11,7 @@ export const subscribeNewTokenRoute: FastifyPluginAsyncZod = async app => {
         tags: ['Token'],
         summary:
           'Atualiza o token que pode ser usado em outras requisições para o Sigma ECM.',
-        body: z.object({
-          accessToken: z.string(),
-          refreshToken: z.string()
-        }),
+        body: subscribeNewTokenRequestSchema,
         response: {
           201: z.null(),
         },

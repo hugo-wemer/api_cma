@@ -1,6 +1,7 @@
 import { relations } from 'drizzle-orm'
 import { pgTable, text } from 'drizzle-orm/pg-core'
 import { variables } from './variables'
+import { sensors } from './sensors'
 
 export const sensorsRegistries = pgTable('sensors-registries', {
   id: text('id').primaryKey(),

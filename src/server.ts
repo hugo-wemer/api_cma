@@ -10,7 +10,6 @@ import {
 } from 'fastify-type-provider-zod'
 import { env } from './env'
 import { getRegistries } from './functions/get-registries'
-import { getCommunicationStatusRoute } from './routes/get-communication-status-route'
 import { getOnlineValuesRoute } from './routes/get-online-values-route'
 import { getRegistriesRoute } from './routes/get-registries-route'
 import { getStatusRoute } from './routes/get-status-route'
@@ -41,7 +40,6 @@ app.register(fastifySwaggerUi, {
 app.register(getTokenRoute)
 app.register(subscribeNewTokenRoute)
 app.register(getRegistriesRoute)
-app.register(getCommunicationStatusRoute)
 app.register(getStatusRoute)
 app.register(getVariablesRoute)
 app.register(getOnlineValuesRoute)

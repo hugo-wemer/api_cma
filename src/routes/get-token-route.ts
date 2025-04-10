@@ -1,6 +1,7 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 import { getToken } from '../functions/get-token'
+import { getTokenResponseSchema } from '../types'
 
 export const getTokenRoute: FastifyPluginAsyncZod = async app => {
   app.get(
@@ -11,11 +12,7 @@ export const getTokenRoute: FastifyPluginAsyncZod = async app => {
         summary:
           'Consulta o token disponível para uso em requisições no Sigma ECM.',
         response: {
-          200: z.object({
-            accessToken: z.string(),
-            refreshToken: z.string(),
-            updatedAt: z.date(),
-          }),
+          200: getTokenResponseSchema
         },
       },
     },

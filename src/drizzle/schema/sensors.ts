@@ -23,7 +23,7 @@ export const sensorRelations = relations(sensors, ({ one }) => ({
     fields: [sensors.assetOwnerId],
     references: [assets.id],
   }),
-  sensorsRegistries: one(sensorsRegistries, {
+  sensorsRegistry: one(sensorsRegistries, {
     fields: [sensors.sensorRegistryId],
     references: [sensorsRegistries.id],
   }),
