@@ -1,12 +1,10 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 import { getStatus } from '../functions/get-status'
-import { getStatusResponseSchema } from '../types'
+import { getStatusParamsSchema, getStatusResponseSchema } from '../types'
 
 export const getStatusRoute: FastifyPluginAsyncZod = async app => {
-  const paramsSchema = z.object({
-    companySlug: z.string(),
-  })
+  
 
   app.get(
     '/status/:companySlug',
@@ -14,7 +12,7 @@ export const getStatusRoute: FastifyPluginAsyncZod = async app => {
       schema: {
         tags: ['Status'],
         summary: 'Consulta o estado da comunicação e alarme de cada sensor por empresa.',
-        params: paramsSchema,
+        params: getStatusParamsSchema,
         response: {
           200: getStatusResponseSchema
           
@@ -22,7 +20,7 @@ export const getStatusRoute: FastifyPluginAsyncZod = async app => {
       },
     },
     async (request, reply) => {
-      const { companySlug } = paramsSchema.parse(request.params)
+      const { companySlug } = getStatusParamsSchema.parse(request.params)
       const response = await getStatus(companySlug.toLowerCase())
 
       return reply.status(200).send(response)

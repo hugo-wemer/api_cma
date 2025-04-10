@@ -60,5 +60,45 @@ export const getStatusResponseSchema = z.object({
   )
 })
 
+export const getStatusParamsSchema = z.object({
+  companySlug: z.string(),
+})
+
+export const getOnlineValuesParamsSchema = z.object({
+  companySlug: z.string(),
+  regionalSlug: z.string(),
+  installationSlug: z.string(),
+  assetSlug: z.string(),
+})
+
+export const getOnlineValuesResponseSchema = z.object({
+  onlineValues: z.array(
+    z.object({
+      assetName: z.string().nullable(),
+      installationName: z.string().nullable(),
+      regionalName: z.string().nullable(),
+      companyName: z.string().nullable(),
+      sensors: z.array(
+        z.object({
+          sensorName: z.string().nullable(),
+          onlineValues: z.array(
+            z.object({
+              variableName: z.string().nullable(),
+							unit: z.string().nullable(),
+							component: z.string().nullable(),
+							function: z.string().nullable(),
+							valueMax: z.string().nullable(),
+							valueAverage: z.string().nullable(),
+							valueMin: z.string().nullable(),
+							valueRecent: z.string().nullable(),
+            })
+          )
+        })
+      )
+    })
+  )
+})
+
+
 
 export type subscribeNewTokenRequestType = z.infer<typeof subscribeNewTokenRequestSchema>

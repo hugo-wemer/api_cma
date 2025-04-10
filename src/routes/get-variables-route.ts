@@ -7,8 +7,8 @@ export const getVariablesRoute: FastifyPluginAsyncZod = async app => {
     '/variables',
     {
       schema: {
-        tags: ['Nhé'],
-        summary: 'Consulta as variáveis.',
+        tags: ['Registros'],
+        summary: 'Consulta as variáveis definidas para cada sensor.',
         response: {
           200: z.any(),
         },
