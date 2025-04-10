@@ -40,14 +40,14 @@ export const getStatusResponseSchema = z.object({
                       .object({
                         status: z.enum(["Ativo" , "Inativo" , "Desabilitado" , "EstabelecendoComunicacao" , "Simulacao" , "EmManutencao" , "Indeterminado" , "ComunicacaoParcial"]),
                         updatedAt: z.date(),
-                      }),
+                      }).nullish(),
                       sensorAlarm: z
                       .object({
                         condition: z.string(),
                         recognition: z.string(),
                         muted: z.boolean().nullable(),
                         mutedAt: z.date().nullable(),
-                      })
+                      }).nullish()
                     })
                   )
                 })
