@@ -88,7 +88,8 @@ export async function getStatus(companySlug: string) {
       sensorCommunicationStatus: sensorsCommunication.status,
       sensorCommunicationUpdatedAt: sensorsCommunication.updatedAt,
     })
-    .from(regionals)
+    .from(companies)
+    .leftJoin(regionals, eq(companies.id, regionals.companyOwnerId))
     .leftJoin(installations, eq(regionals.id, installations.regionalOwnerId))
     .leftJoin(assets, eq(installations.id, assets.installationOwnerId))
     .leftJoin(sensors, eq(assets.id, sensors.assetOwnerId))
@@ -101,6 +102,7 @@ export async function getStatus(companySlug: string) {
       sensorsCommunication,
       eq(sensors.id, sensorsCommunication.sensorOwnerId)
     )
+    .where(eq(companies.companySlug, companySlug))
 
   const grouped = _(status)
     .groupBy(r => r.regionalSlug)
