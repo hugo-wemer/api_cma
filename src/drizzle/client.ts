@@ -198,17 +198,48 @@ async function main() {
       sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63', // DM1
       assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
     },
- 
   ])
 
   await db.insert(schema.sensorsCommunication).values([
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+    },
     {
       status: 'Ativo',
       sensorOwnerId: '142C5931-C0C0-4B5D-81C8-CB47B90AD634',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+      sensorOwnerId: '5AD7C7B8-D5B9-46C9-9D92-911BD6736EE8',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'E3C1E413-FB84-4DB7-B5A1-27F15BFE4348',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: '115674E6-ABBA-4454-8F9F-E6FE6AFEE416',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: '7F67F8A4-6747-4A35-94B3-8F1583062508',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: '5F656D94-A981-49DC-853A-FC4862EDD7FE',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: '80A49A7E-4ED7-48E8-931F-F1CC76BD075E',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: '791FBF2B-F00B-4DEF-8671-CABE4913F417',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'EFCC11F0-6FEB-47AC-BABF-52DB61B28467',
     },
   ])
 
@@ -216,12 +247,52 @@ async function main() {
     {
       condition: 'Inativo',
       recognition: 'Reconhecido',
+      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
       sensorOwnerId: '142C5931-C0C0-4B5D-81C8-CB47B90AD634',
     },
     {
       condition: 'Ativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+      sensorOwnerId: '5AD7C7B8-D5B9-46C9-9D92-911BD6736EE8',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'E3C1E413-FB84-4DB7-B5A1-27F15BFE4348',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '115674E6-ABBA-4454-8F9F-E6FE6AFEE416',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '7F67F8A4-6747-4A35-94B3-8F1583062508',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '5F656D94-A981-49DC-853A-FC4862EDD7FE',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '80A49A7E-4ED7-48E8-931F-F1CC76BD075E',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '791FBF2B-F00B-4DEF-8671-CABE4913F417',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'EFCC11F0-6FEB-47AC-BABF-52DB61B28467',
     },
   ])
 

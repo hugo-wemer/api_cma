@@ -4,18 +4,16 @@ import { getStatus } from '../functions/get-status'
 import { getStatusParamsSchema, getStatusResponseSchema } from '../types'
 
 export const getStatusRoute: FastifyPluginAsyncZod = async app => {
-  
-
   app.get(
     '/status/:companySlug',
     {
       schema: {
         tags: ['Status'],
-        summary: 'Consulta o estado da comunicação e alarme de cada sensor por empresa.',
+        summary:
+          'Consulta o estado da comunicação e alarme de cada sensor por empresa.',
         params: getStatusParamsSchema,
         response: {
-          200: getStatusResponseSchema
-          
+          200: getStatusResponseSchema,
         },
       },
     },
