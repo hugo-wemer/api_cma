@@ -52,6 +52,103 @@ async function main() {
       regionalName: 'Icaraizinho',
       regionalSlug: 'icaraizinho',
     },
+    //---------------- Dados Falsos -----------------
+    {
+      id: 'Albatroz',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Albatroz',
+      regionalSlug: 'albatroz',
+    },
+    {
+      id: 'Aracati',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Aracati',
+      regionalSlug: 'aracati',
+    },
+    {
+      id: 'BlocoNorte',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Bloco Norte',
+      regionalSlug: 'bloco-norte',
+    },
+    {
+      id: 'BlocoSul',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Bloco Sul',
+      regionalSlug: 'bloco-sul',
+    },
+    {
+      id: 'CampodosVentos',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Campo dos Ventos',
+      regionalSlug: 'campo-dos-ventos',
+    },
+    {
+      id: 'Icaraizinho',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Icaraizinho',
+      regionalSlug: 'icaraizinho',
+    },
+    {
+      id: 'Macacos',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Macacos',
+      regionalSlug: 'macacos',
+    },
+    {
+      id: 'MorrodosVentosDois',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Morro dos Ventos Dois',
+      regionalSlug: 'morro-dos-ventos-dois',
+    },
+    {
+      id: 'MorrodosVentosTres',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Morro dos Ventos Tres',
+      regionalSlug: 'morro-dos-ventos-tres',
+    },
+    {
+      id: 'Paracuru',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Paracuru',
+      regionalSlug: 'paracuru',
+    },
+    {
+      id: 'PedraCheirosa',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Pedra Cheirosa',
+      regionalSlug: 'pedra-cheirosa',
+    },
+    {
+      id: 'PraiaFormosa',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Praia Formosa',
+      regionalSlug: 'praia-formosa',
+    },
+    {
+      id: 'SantaClara',
+      companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+      regionalName: 'Santa Clara',
+      regionalSlug: 'santa-clara',
+    },
+    // {
+    //   id: 'BoaVista2',
+    //   companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+    //   regionalName: 'Boa Vista 2',
+    //   regionalSlug: 'boa-vista-2',
+    // },
+    // {
+    //   id: 'NovoHorizonte',
+    //   companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+    //   regionalName: 'Novo Horizonte',
+    //   regionalSlug: 'novo-horizonte',
+    // },
+    // {
+    //   id: 'SantaLuzia',
+    //   companyOwnerId: '72a92769-86e4-447a-8550-f383e285e70f',
+    //   regionalName: 'Santa Luzia',
+    //   regionalSlug: 'santa-luzia',
+    // },
   ])
 
   await db.insert(schema.installations).values([
@@ -64,8 +161,87 @@ async function main() {
     {
       id: 'b3dfdef2-28a2-4009-8faa-53cddbebfe82',
       regionalOwnerId: '051e6b6a-1270-48ff-982c-d40f1c7fcba3',
-      installationName: 'Icaraizinho - SE',
+      installationName: 'Icaraizinho-SE',
       installationSlug: 'icaraizinho-se',
+    },
+    // --------------- Dados Falsos -----------------
+    {
+      id: 'Albatroz-SE',
+      regionalOwnerId: 'Albatroz',
+      installationName: 'Albatroz-SE',
+      installationSlug: 'albatroz-se',
+    },
+    {
+      id: 'Aracati-SE',
+      regionalOwnerId: 'Aracati',
+      installationName: 'Aracati-SE',
+      installationSlug: 'aracati-se',
+    },
+    {
+      id: 'Bloco Norte-SE',
+      regionalOwnerId: 'BlocoNorte',
+      installationName: 'Bloco Norte-SE',
+      installationSlug: 'bloco-norte-se',
+    },
+    {
+      id: 'Bloco Sul-SE',
+      regionalOwnerId: 'BlocoSul',
+      installationName: 'Bloco Sul-SE',
+      installationSlug: 'bloco-sul-se',
+    },
+    {
+      id: 'Campo dos Ventos-SE',
+      regionalOwnerId: 'CampodosVentos',
+      installationName: 'Campo dos Ventos-SE',
+      installationSlug: 'campo-dos-ventos-se',
+    },
+    {
+      id: 'Icaraizinho-SE',
+      regionalOwnerId: 'Icaraizinho',
+      installationName: 'Icaraizinho-SE',
+      installationSlug: 'icaraizinho-se',
+    },
+    {
+      id: 'Macacos-SE',
+      regionalOwnerId: 'Macacos',
+      installationName: 'Macacos-SE',
+      installationSlug: 'macacos-se',
+    },
+    {
+      id: 'Morro dos Ventos Dois-SE',
+      regionalOwnerId: 'MorrodosVentosDois',
+      installationName: 'Morro dos Ventos Dois-SE',
+      installationSlug: 'morro-dos-ventos-dois-se',
+    },
+    {
+      id: 'Morro dos Ventos Tres-SE',
+      regionalOwnerId: 'MorrodosVentosTres',
+      installationName: 'Morro dos Ventos Tres-SE',
+      installationSlug: 'morro-dos-ventos-tres-se',
+    },
+    {
+      id: 'Paracuru-SE',
+      regionalOwnerId: 'Paracuru',
+      installationName: 'Paracuru-SE',
+      installationSlug: 'paracuru-se',
+    },
+    {
+      id: 'Pedra Cheirosa-SE',
+      regionalOwnerId: 'PedraCheirosa',
+      installationName: 'Pedra Cheirosa-SE',
+      installationSlug: 'pedra-cheirosa-se',
+    },
+    {
+      id: 'Praia Formosa-SE',
+      regionalOwnerId: 'PraiaFormosa',
+      installationName: 'Praia Formosa-SE',
+      installationSlug: 'praia-formosa-se',
+    },
+    {
+      id: 'Santa Clara-SE',
+      regionalOwnerId: 'SantaClara',
+      installationName: 'Santa Clara-SE',
+      installationSlug: 'santa-clara-se',
     },
   ])
 
@@ -81,6 +257,134 @@ async function main() {
       installationOwnerId: 'b3dfdef2-28a2-4009-8faa-53cddbebfe82',
       assetName: '04T1',
       assetSlug: '04t1',
+    },
+
+    // --------------------- Dados Falsos -------------------------------------------------
+    {
+      id: 'Albatroz-01T1',
+      installationOwnerId: 'Albatroz-SE',
+      assetName: '01T1',
+      assetSlug: '01t1',
+    },
+    {
+      id: 'Aracati-04T1',
+      installationOwnerId: 'Aracati-SE',
+      assetName: '04T1',
+      assetSlug: '04t1',
+    },
+    {
+      id: 'Aracati-04T2',
+      installationOwnerId: 'Aracati-SE',
+      assetName: '04T2',
+      assetSlug: '04t2',
+    },
+    {
+      id: 'BlocoNorte-03T1',
+      installationOwnerId: 'Bloco Norte-SE',
+      assetName: '03T1',
+      assetSlug: '03t1',
+    },
+    {
+      id: 'BlocoNorte-03T2',
+      installationOwnerId: 'Bloco Norte-SE',
+      assetName: '03T2',
+      assetSlug: '03t2',
+    },
+    {
+      id: 'BlocoSul-03T1',
+      installationOwnerId: 'Bloco Sul-SE',
+      assetName: '03T1',
+      assetSlug: '03t1',
+    },
+    {
+      id: 'BlocoSul-03T2',
+      installationOwnerId: 'Bloco Sul-SE',
+      assetName: '03T2',
+      assetSlug: '03t2',
+    },
+    {
+      id: 'CampodosVentos-03T1',
+      installationOwnerId: 'Campo dos Ventos-SE',
+      assetName: '03T1',
+      assetSlug: '03t1',
+    },
+    {
+      id: 'CampodosVentos-03T2',
+      installationOwnerId: 'Campo dos Ventos-SE',
+      assetName: '03T2',
+      assetSlug: '03t2',
+    },
+    {
+      id: 'Icaraizinho-04T1',
+      installationOwnerId: 'Icaraizinho-SE',
+      assetName: '04T1',
+      assetSlug: '04t1',
+    },
+    {
+      id: 'Macacos-03T1',
+      installationOwnerId: 'Macacos-SE',
+      assetName: '03T1',
+      assetSlug: '03t1',
+    },
+    {
+      id: 'Macacos-03T2',
+      installationOwnerId: 'Macacos-SE',
+      assetName: '03T2',
+      assetSlug: '03t2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1',
+      installationOwnerId: 'Morro dos Ventos Dois-SE',
+      assetName: '02T1',
+      assetSlug: '02t1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2',
+      installationOwnerId: 'Morro dos Ventos Dois-SE',
+      assetName: '02T2',
+      assetSlug: '02t2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3',
+      installationOwnerId: 'Morro dos Ventos Tres-SE',
+      assetName: '03T3',
+      assetSlug: '03t3',
+    },
+    {
+      id: 'Paracuru-02T1',
+      installationOwnerId: 'Paracuru-SE',
+      assetName: '02T1',
+      assetSlug: '02t1',
+    },
+    {
+      id: 'PedraCheirosa-04T1',
+      installationOwnerId: 'Pedra Cheirosa-SE',
+      assetName: '04T1',
+      assetSlug: '04t1',
+    },
+    {
+      id: 'PraiaFormosa-04T1',
+      installationOwnerId: 'Praia Formosa-SE',
+      assetName: '04T1',
+      assetSlug: '04t1',
+    },
+    {
+      id: 'SantaClara-09T1',
+      installationOwnerId: 'Santa Clara-SE',
+      assetName: '09T1',
+      assetSlug: '09t1',
+    },
+    {
+      id: 'SantaClara-09T2',
+      installationOwnerId: 'Santa Clara-SE',
+      assetName: '09T2',
+      assetSlug: '09t2',
+    },
+    {
+      id: 'SantaClara-09T3',
+      installationOwnerId: 'Santa Clara-SE',
+      assetName: '09T3',
+      assetSlug: '09t3',
     },
   ])
 
@@ -105,7 +409,7 @@ async function main() {
     },
     {
       id: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
-      sensorName: 'GMP - Sensor Gás e Umidade Dissolvidos no Óleo Isolante',
+      sensorName: 'GMP-SEnsor Gás e Umidade Dissolvidos no Óleo Isolante',
       sensorSlug: 'gmp',
       sensorShowName: 'GMP',
     },
@@ -148,151 +452,1500 @@ async function main() {
   ])
 
   await db.insert(schema.sensors).values([
+    //
     {
-      id: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
-      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7', // GMP
+      id: 'ac732d76-ef4b-4ff7-8ebb-015bf9867551',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
       assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
     },
     {
-      id: '142C5931-C0C0-4B5D-81C8-CB47B90AD634',
-      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b', // BM
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: '61d38ce6-79b8-4a81-a22e-5496b3919460',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
+    },
+    // ---------------- Dados Falsos -----------------
+    {
+      id: 'Albatroz-01T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Albatroz-01T1',
     },
     {
-      id: '5AD7C7B8-D5B9-46C9-9D92-911BD6736EE8',
-      sensorRegistryId: '4A6912FE-9B6D-4107-8878-36B2B4CD83CC', // PI
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'Aracati-04T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Aracati-04T1',
     },
     {
-      id: 'E3C1E413-FB84-4DB7-B5A1-27F15BFE4348',
-      sensorRegistryId: '715EDC30-DD80-4A7E-9771-AD419DF8782E', // SPS
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'Aracati-04T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Aracati-04T2',
     },
     {
-      id: '115674E6-ABBA-4454-8F9F-E6FE6AFEE416',
-      sensorRegistryId: '72EC3B40-6252-4BE4-AD25-338F9FC944F6', // IDM
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'BlocoNorte-03T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'BlocoNorte-03T1',
     },
     {
-      id: '7F67F8A4-6747-4A35-94B3-8F1583062508',
-      sensorRegistryId: '7711B6EB-34AC-4D01-86C1-0164197C18BE', // DM2
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'BlocoNorte-03T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'BlocoNorte-03T2',
     },
     {
-      id: '5F656D94-A981-49DC-853A-FC4862EDD7FE',
-      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d', // AVR
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'BlocoSul-03T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'BlocoSul-03T1',
     },
     {
-      id: '80A49A7E-4ED7-48E8-931F-F1CC76BD075E',
-      sensorRegistryId: 'D8DCE90E-FEC0-48B5-850A-70075616565B', // MO
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'BlocoSul-03T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'BlocoSul-03T2',
     },
     {
-      id: '791FBF2B-F00B-4DEF-8671-CABE4913F417',
-      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE', // TM1
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'CampodosVentos-03T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'CampodosVentos-03T1',
     },
     {
-      id: 'EFCC11F0-6FEB-47AC-BABF-52DB61B28467',
-      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63', // DM1
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      id: 'CampodosVentos-03T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'CampodosVentos-03T2',
+    },
+    {
+      id: 'Icaraizinho-04T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Icaraizinho-04T1',
+    },
+    {
+      id: 'Macacos-03T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Macacos-03T1',
+    },
+    {
+      id: 'Macacos-03T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Macacos-03T2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'MorrodosVentosDois-02T1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'MorrodosVentosDois-02T2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'MorrodosVentosTres-03T3',
+    },
+    {
+      id: 'Paracuru-02T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'Paracuru-02T1',
+    },
+    {
+      id: 'PedraCheirosa-04T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'PedraCheirosa-04T1',
+    },
+    {
+      id: 'PraiaFormosa-04T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'PraiaFormosa-04T1',
+    },
+    {
+      id: 'SantaClara-09T1-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'SantaClara-09T1',
+    },
+    {
+      id: 'SantaClara-09T2-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'SantaClara-09T2',
+    },
+    {
+      id: 'SantaClara-09T3-BM',
+      sensorRegistryId: '33841bdc-5858-4820-baf4-b0209815be0b',
+      assetOwnerId: 'SantaClara-09T3',
+    },
+    {
+      id: 'Aracati-04T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Aracati-04T1',
+    },
+    {
+      id: 'Aracati-04T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Aracati-04T2',
+    },
+    {
+      id: 'BlocoNorte-03T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'BlocoNorte-03T1',
+    },
+    {
+      id: 'BlocoNorte-03T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'BlocoNorte-03T2',
+    },
+    {
+      id: 'BlocoSul-03T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'BlocoSul-03T1',
+    },
+    {
+      id: 'BlocoSul-03T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'BlocoSul-03T2',
+    },
+    {
+      id: 'CampodosVentos-03T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'CampodosVentos-03T1',
+    },
+    {
+      id: 'CampodosVentos-03T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'CampodosVentos-03T2',
+    },
+    {
+      id: 'Icaraizinho-04T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Icaraizinho-04T1',
+    },
+    {
+      id: 'Macacos-03T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Macacos-03T1',
+    },
+    {
+      id: 'Macacos-03T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Macacos-03T2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'MorrodosVentosDois-02T1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'MorrodosVentosDois-02T2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'MorrodosVentosTres-03T3',
+    },
+    {
+      id: 'Paracuru-02T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'Paracuru-02T1',
+    },
+    {
+      id: 'PedraCheirosa-04T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'PedraCheirosa-04T1',
+    },
+    {
+      id: 'PraiaFormosa-04T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'PraiaFormosa-04T1',
+    },
+    {
+      id: 'SantaClara-09T1-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'SantaClara-09T1',
+    },
+    {
+      id: 'SantaClara-09T2-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'SantaClara-09T2',
+    },
+    {
+      id: 'SantaClara-09T3-DM1',
+      sensorRegistryId: 'E250F3C8-3E26-4CA8-80B6-2624AFEB2C63',
+      assetOwnerId: 'SantaClara-09T3',
+    },
+    {
+      id: 'Albatroz-01T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Albatroz-01T1',
+    },
+    {
+      id: 'Aracati-04T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Aracati-04T1',
+    },
+    {
+      id: 'Aracati-04T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Aracati-04T2',
+    },
+    {
+      id: 'BlocoNorte-03T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'BlocoNorte-03T1',
+    },
+    {
+      id: 'BlocoNorte-03T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'BlocoNorte-03T2',
+    },
+    {
+      id: 'BlocoSul-03T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'BlocoSul-03T1',
+    },
+    {
+      id: 'BlocoSul-03T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'BlocoSul-03T2',
+    },
+    {
+      id: 'CampodosVentos-03T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'CampodosVentos-03T1',
+    },
+    {
+      id: 'CampodosVentos-03T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'CampodosVentos-03T2',
+    },
+    {
+      id: 'Icaraizinho-04T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Icaraizinho-04T1',
+    },
+    {
+      id: 'Macacos-03T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Macacos-03T1',
+    },
+    {
+      id: 'Macacos-03T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Macacos-03T2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'MorrodosVentosDois-02T1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'MorrodosVentosDois-02T2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'MorrodosVentosTres-03T3',
+    },
+    {
+      id: 'Paracuru-02T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'Paracuru-02T1',
+    },
+    {
+      id: 'PedraCheirosa-04T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'PedraCheirosa-04T1',
+    },
+    {
+      id: 'PraiaFormosa-04T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'PraiaFormosa-04T1',
+    },
+    {
+      id: 'SantaClara-09T1-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'SantaClara-09T1',
+    },
+    {
+      id: 'SantaClara-09T2-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'SantaClara-09T2',
+    },
+    {
+      id: 'SantaClara-09T3-TM1',
+      sensorRegistryId: 'DBDF1F02-DE9F-4551-9233-C45B5BCB92BE',
+      assetOwnerId: 'SantaClara-09T3',
+    },
+    {
+      id: 'Albatroz-01T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Albatroz-01T1',
+    },
+    {
+      id: 'Aracati-04T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Aracati-04T1',
+    },
+    {
+      id: 'Aracati-04T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Aracati-04T2',
+    },
+    {
+      id: 'BlocoNorte-03T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'BlocoNorte-03T1',
+    },
+    {
+      id: 'BlocoNorte-03T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'BlocoNorte-03T2',
+    },
+    {
+      id: 'BlocoSul-03T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'BlocoSul-03T1',
+    },
+    {
+      id: 'BlocoSul-03T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'BlocoSul-03T2',
+    },
+    {
+      id: 'CampodosVentos-03T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'CampodosVentos-03T1',
+    },
+    {
+      id: 'CampodosVentos-03T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'CampodosVentos-03T2',
+    },
+    {
+      id: 'Icaraizinho-04T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Icaraizinho-04T1',
+    },
+    {
+      id: 'Macacos-03T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Macacos-03T1',
+    },
+    {
+      id: 'Macacos-03T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Macacos-03T2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'MorrodosVentosDois-02T1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'MorrodosVentosDois-02T2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'MorrodosVentosTres-03T3',
+    },
+    {
+      id: 'Paracuru-02T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'Paracuru-02T1',
+    },
+    {
+      id: 'PedraCheirosa-04T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'PedraCheirosa-04T1',
+    },
+    {
+      id: 'PraiaFormosa-04T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'PraiaFormosa-04T1',
+    },
+    {
+      id: 'SantaClara-09T1-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'SantaClara-09T1',
+    },
+    {
+      id: 'SantaClara-09T2-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'SantaClara-09T2',
+    },
+    {
+      id: 'SantaClara-09T3-GMP',
+      sensorRegistryId: '1A61A477-AAEF-45E7-A4C2-25FB10744AC7',
+      assetOwnerId: 'SantaClara-09T3',
+    },
+    {
+      id: 'Albatroz-01T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Albatroz-01T1',
+    },
+    {
+      id: 'Aracati-04T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Aracati-04T1',
+    },
+    {
+      id: 'Aracati-04T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Aracati-04T2',
+    },
+    {
+      id: 'BlocoNorte-03T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'BlocoNorte-03T1',
+    },
+    {
+      id: 'BlocoNorte-03T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'BlocoNorte-03T2',
+    },
+    {
+      id: 'BlocoSul-03T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'BlocoSul-03T1',
+    },
+    {
+      id: 'BlocoSul-03T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'BlocoSul-03T2',
+    },
+    {
+      id: 'CampodosVentos-03T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'CampodosVentos-03T1',
+    },
+    {
+      id: 'CampodosVentos-03T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'CampodosVentos-03T2',
+    },
+    {
+      id: 'Icaraizinho-04T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Icaraizinho-04T1',
+    },
+    {
+      id: 'Macacos-03T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Macacos-03T1',
+    },
+    {
+      id: 'Macacos-03T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Macacos-03T2',
+    },
+    {
+      id: 'MorrodosVentosDois-02T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'MorrodosVentosDois-02T1',
+    },
+    {
+      id: 'MorrodosVentosDois-02T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'MorrodosVentosDois-02T2',
+    },
+    {
+      id: 'MorrodosVentosTres-03T3-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'MorrodosVentosTres-03T3',
+    },
+    {
+      id: 'Paracuru-02T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'Paracuru-02T1',
+    },
+    {
+      id: 'PedraCheirosa-04T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'PedraCheirosa-04T1',
+    },
+    {
+      id: 'PraiaFormosa-04T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'PraiaFormosa-04T1',
+    },
+    {
+      id: 'SantaClara-09T1-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'SantaClara-09T1',
+    },
+    {
+      id: 'SantaClara-09T2-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'SantaClara-09T2',
+    },
+    {
+      id: 'SantaClara-09T3-AVR',
+      sensorRegistryId: '78b5f19a-c1e2-4087-aa1d-08c21ea9ed0d',
+      assetOwnerId: 'SantaClara-09T3',
     },
   ])
 
   await db.insert(schema.sensorsCommunication).values([
     {
       status: 'Ativo',
-      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+      sensorOwnerId: 'ac732d76-ef4b-4ff7-8ebb-015bf9867551',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '142C5931-C0C0-4B5D-81C8-CB47B90AD634',
+      sensorOwnerId: '61d38ce6-79b8-4a81-a22e-5496b3919460',
+    },
+    // ---------------------- Dados Falsos -------------
+    {
+      status: 'Inativo',
+      sensorOwnerId: 'Albatroz-01T1-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '5AD7C7B8-D5B9-46C9-9D92-911BD6736EE8',
+      sensorOwnerId: 'Aracati-04T1-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: 'E3C1E413-FB84-4DB7-B5A1-27F15BFE4348',
+      sensorOwnerId: 'Aracati-04T2-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '115674E6-ABBA-4454-8F9F-E6FE6AFEE416',
+      sensorOwnerId: 'BlocoNorte-03T1-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '7F67F8A4-6747-4A35-94B3-8F1583062508',
+      sensorOwnerId: 'BlocoNorte-03T2-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '5F656D94-A981-49DC-853A-FC4862EDD7FE',
+      sensorOwnerId: 'BlocoSul-03T1-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '80A49A7E-4ED7-48E8-931F-F1CC76BD075E',
+      sensorOwnerId: 'BlocoSul-03T2-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: '791FBF2B-F00B-4DEF-8671-CABE4913F417',
+      sensorOwnerId: 'CampodosVentos-03T1-BM',
     },
     {
       status: 'Ativo',
-      sensorOwnerId: 'EFCC11F0-6FEB-47AC-BABF-52DB61B28467',
+      sensorOwnerId: 'CampodosVentos-03T2-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Icaraizinho-04T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T2-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Paracuru-02T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PedraCheirosa-04T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PraiaFormosa-04T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T1-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T2-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T3-BM',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Icaraizinho-04T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Paracuru-02T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PedraCheirosa-04T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PraiaFormosa-04T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T1-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T2-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T3-DM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Albatroz-01T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Icaraizinho-04T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Paracuru-02T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PedraCheirosa-04T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PraiaFormosa-04T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T1-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T2-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T3-TM1',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Albatroz-01T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Icaraizinho-04T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Paracuru-02T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PedraCheirosa-04T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PraiaFormosa-04T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T1-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T2-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T3-GMP',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Albatroz-01T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Aracati-04T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoNorte-03T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'BlocoSul-03T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'CampodosVentos-03T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Icaraizinho-04T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Macacos-03T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'Paracuru-02T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PedraCheirosa-04T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'PraiaFormosa-04T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T1-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T2-AVR',
+    },
+    {
+      status: 'Ativo',
+      sensorOwnerId: 'SantaClara-09T3-AVR',
     },
   ])
 
   await db.insert(schema.sensorsAlarms).values([
     {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'ac732d76-ef4b-4ff7-8ebb-015bf9867551',
+    },
+    {
+      condition: 'Ativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: '61d38ce6-79b8-4a81-a22e-5496b3919460',
+    },
+    // ------------- DADOS FALSOS ---------------
+
+    {
       condition: 'Inativo',
-      recognition: 'Reconhecido',
-      sensorOwnerId: 'DC6E8874-0202-4B74-9BAA-50A4A6581DAB',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Albatroz-01T1-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '142C5931-C0C0-4B5D-81C8-CB47B90AD634',
+      sensorOwnerId: 'Aracati-04T1-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '5AD7C7B8-D5B9-46C9-9D92-911BD6736EE8',
+      sensorOwnerId: 'Aracati-04T2-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: 'E3C1E413-FB84-4DB7-B5A1-27F15BFE4348',
+      sensorOwnerId: 'BlocoNorte-03T1-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '115674E6-ABBA-4454-8F9F-E6FE6AFEE416',
+      sensorOwnerId: 'BlocoNorte-03T2-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '7F67F8A4-6747-4A35-94B3-8F1583062508',
+      sensorOwnerId: 'BlocoSul-03T1-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '5F656D94-A981-49DC-853A-FC4862EDD7FE',
+      sensorOwnerId: 'BlocoSul-03T2-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '80A49A7E-4ED7-48E8-931F-F1CC76BD075E',
+      sensorOwnerId: 'CampodosVentos-03T1-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: '791FBF2B-F00B-4DEF-8671-CABE4913F417',
+      sensorOwnerId: 'CampodosVentos-03T2-BM',
     },
     {
-      condition: 'Ativo',
+      condition: 'Inativo',
       recognition: 'NaoReconhecido',
-      sensorOwnerId: 'EFCC11F0-6FEB-47AC-BABF-52DB61B28467',
+      sensorOwnerId: 'Icaraizinho-04T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T2-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Paracuru-02T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PedraCheirosa-04T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PraiaFormosa-04T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T1-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T2-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T3-BM',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Icaraizinho-04T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Paracuru-02T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PedraCheirosa-04T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PraiaFormosa-04T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T1-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T2-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T3-DM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Albatroz-01T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Icaraizinho-04T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Paracuru-02T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PedraCheirosa-04T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PraiaFormosa-04T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T1-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T2-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T3-TM1',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Albatroz-01T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Icaraizinho-04T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Paracuru-02T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PedraCheirosa-04T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PraiaFormosa-04T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T1-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T2-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T3-GMP',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Albatroz-01T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Aracati-04T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoNorte-03T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'BlocoSul-03T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'CampodosVentos-03T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Icaraizinho-04T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Macacos-03T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosDois-02T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'MorrodosVentosTres-03T3-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'Paracuru-02T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PedraCheirosa-04T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'PraiaFormosa-04T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T1-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T2-AVR',
+    },
+    {
+      condition: 'Inativo',
+      recognition: 'NaoReconhecido',
+      sensorOwnerId: 'SantaClara-09T3-AVR',
     },
   ])
 
@@ -701,7 +2354,7 @@ async function main() {
   await db.insert(schema.onlineValues).values([
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '1d4a92cc5e3946a691f6a39c56497399',
       valueMax: '95',
       valueAverage: '95',
@@ -710,7 +2363,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'f8e3fe965f764be2a8bfc08352f114da',
       valueMax: '87',
       valueAverage: '67',
@@ -719,7 +2372,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'c118a2b845f743318976bb6a8328993d',
       valueMax: '110',
       valueAverage: '110',
@@ -728,7 +2381,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'cf29c51f4eee4d4985c858e614f2622b',
       valueMax: '100',
       valueAverage: '80',
@@ -737,7 +2390,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'fe2db1ff278b4005bc6a36922822572a',
       valueMax: '1',
       valueAverage: '1',
@@ -746,7 +2399,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'ec0df536567d47c9a783897ddb7e8855',
       valueMax: '1',
       valueAverage: '1',
@@ -755,7 +2408,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '859d2a2ab8cd43f08dd23c73c217d80d',
       valueMax: '103',
       valueAverage: '87',
@@ -764,16 +2417,16 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '6ffe866d25204965bef648060cb3d608',
-      valueMax: '36700',
-      valueAverage: '34500',
-      valueMin: '33800',
-      valueRecent: '34500',
+      valueMax: '36,700',
+      valueAverage: '34,500',
+      valueMin: '33,800',
+      valueRecent: '34,500',
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'f9769e503c16487cb2161514d0772166',
       valueMax: '500',
       valueAverage: '500',
@@ -782,7 +2435,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'ec004a8d19534df28850a7da6d590ef2',
       valueMax: '0,3',
       valueAverage: '0,3',
@@ -791,7 +2444,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '36e188cbb3784f909dc69e16374f93c0',
       valueMax: '24,3',
       valueAverage: '24,1',
@@ -800,7 +2453,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '01d1e0cadd59414aa95dd9787ea595f9',
       valueMax: '560',
       valueAverage: '560',
@@ -809,7 +2462,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'a244216e0f244ac7afc5e19d0669a436',
       valueMax: '0,33',
       valueAverage: '0,33',
@@ -818,7 +2471,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '6299f1aa1b6e4016ba1020ff38821c78',
       valueMax: '26,7',
       valueAverage: '26,2',
@@ -827,7 +2480,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '1f8f9f18eb5a4605bb061178e8e9b687',
       valueMax: '490',
       valueAverage: '490',
@@ -836,7 +2489,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '6f9101e8c2de48e1811d9eee740ec037',
       valueMax: '0,28',
       valueAverage: '0,28',
@@ -845,7 +2498,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '85be58b0b5b647d4ba9191235de0553f',
       valueMax: '22,9',
       valueAverage: '22,6',
@@ -854,7 +2507,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'd5e889823b27445a8003abcf89632ce6',
       valueMax: '520',
       valueAverage: '520',
@@ -863,7 +2516,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'fcf9e286820a4c22a403223f920a14ae',
       valueMax: '0,7',
       valueAverage: '0,7',
@@ -872,7 +2525,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'd6cac577e4d447dc8ea223e0fed485eb',
       valueMax: '25',
       valueAverage: '25',
@@ -881,7 +2534,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'fad973b4f7094dd191c1384fdd129847',
       valueMax: '590',
       valueAverage: '590',
@@ -890,7 +2543,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'bae4f28b5b0e4c4da3b4cd149dcd20ef',
       valueMax: '0,7',
       valueAverage: '0,7',
@@ -899,7 +2552,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'bbfd972029fc46ee923669c45c671fc0',
       valueMax: '25',
       valueAverage: '25',
@@ -908,7 +2561,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '25391e8535754989b572a9c504435883',
       valueMax: '510',
       valueAverage: '510',
@@ -917,7 +2570,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '12e7d300ba0447228b13a35483d1a980',
       valueMax: '0,7',
       valueAverage: '0,7',
@@ -926,7 +2579,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '1f5f76165f684ad98e34d842fab4a44e',
       valueMax: '25',
       valueAverage: '25',
@@ -935,7 +2588,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'd147bafd04fe476190cbeb91d4a81fec',
       valueMax: '500',
       valueAverage: '500',
@@ -944,7 +2597,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '128e647453234842af4089d389c2a95f',
       valueMax: '0,3',
       valueAverage: '0,3',
@@ -953,7 +2606,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '6e5ec546f0b54182932608ec1b54081c',
       valueMax: '560',
       valueAverage: '560',
@@ -962,7 +2615,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'f68030da69ff44a8b8b58260205486d9',
       valueMax: '0,33',
       valueAverage: '0,33',
@@ -971,7 +2624,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'd48052e2b04f4b138fe32b1e86ac5e30',
       valueMax: '490',
       valueAverage: '490',
@@ -980,7 +2633,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '1ee4380ce4494aafad065819e92b6d84',
       valueMax: '0,28',
       valueAverage: '0,28',
@@ -989,7 +2642,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'e6f6208a761a49c3b9587651f1f6fdde',
       valueMax: '30',
       valueAverage: '30',
@@ -998,7 +2651,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '8181366ce73d4aa9a144b7f5db6d6076',
       valueMax: '200',
       valueAverage: '200',
@@ -1007,7 +2660,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '09c4f48051ed4da0bd5415ce145f74bd',
       valueMax: '18',
       valueAverage: '10',
@@ -1016,7 +2669,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '7c83cd8a08cc4a609e24a46ab7a0a94f',
       valueMax: '25',
       valueAverage: '25',
@@ -1025,7 +2678,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'aac7aa182b6541098e7f4373adc93103',
       valueMax: '18',
       valueAverage: '10',
@@ -1034,7 +2687,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '8be705c3d8a94a27a94da560bcbdc0b0',
       valueMax: '20',
       valueAverage: '20',
@@ -1043,7 +2696,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '201355ad584146b4b3183e9304b3d4e0',
       valueMax: '222',
       valueAverage: '220',
@@ -1052,7 +2705,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '32da8924fa7d4646801f3e9130a7bf7b',
       valueMax: '223',
       valueAverage: '221',
@@ -1061,7 +2714,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '5d197b61fc8e414397555b3f52b878da',
       valueMax: '224',
       valueAverage: '222',
@@ -1070,7 +2723,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '7f0cd6033c9443769c8fbc005168c9d6',
       valueMax: '210',
       valueAverage: '210',
@@ -1079,7 +2732,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'f9e2113c7bda426084033c9bcbe34fda',
       valueMax: '230',
       valueAverage: '230',
@@ -1088,7 +2741,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'ae07405d759643c9a1a0c3f06fd8948a',
       valueMax: '18',
       valueAverage: '10',
@@ -1097,7 +2750,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: '2157aa58c3724d3b852f5ca484b447c5',
       valueMax: '18',
       valueAverage: '10',
@@ -1106,7 +2759,7 @@ async function main() {
     },
     {
       id: randomUUID(),
-      assetOwnerId: 'b954bd1d-880e-4483-a16b-1b0dc57ecd22',
+      assetOwnerId: '64febbd7-e23b-4226-ae8d-e7f4f2c5067f',
       variableId: 'c467a4b06a4f44b2808b89312927577f',
       valueMax: '10',
       valueAverage: '8',
