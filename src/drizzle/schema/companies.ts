@@ -1,5 +1,6 @@
 import { relations } from 'drizzle-orm'
 import { pgTable, text } from 'drizzle-orm/pg-core'
+import { installations } from './installations'
 import { regionals } from './regionals'
 
 export const companies = pgTable('companies', {
@@ -10,4 +11,5 @@ export const companies = pgTable('companies', {
 
 export const companiesRelations = relations(companies, ({ many }) => ({
   regionals: many(regionals),
+  installations: many(installations),
 }))

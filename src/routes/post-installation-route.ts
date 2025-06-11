@@ -17,13 +17,13 @@ export const postInstallationRoute: FastifyPluginAsyncZod = async app => {
       },
     },
     async (request, reply) => {
-      const { id, installationName, installationSlug, regionalOwnerId } =
+      const { id, installationName, installationSlug, companyOwnerId } =
         request.body
       await postInstallation({
         id,
         installationName,
         installationSlug,
-        regionalOwnerId,
+        companyOwnerId,
       })
       return reply.status(201).send()
     }

@@ -17,7 +17,7 @@ export const postInstallationRequestSchema = z.object({
   id: z.string().uuid(),
   installationName: z.string(),
   installationSlug: z.string(),
-  regionalOwnerId: z.string().uuid(),
+  companyOwnerId: z.string().uuid(),
 })
 
 export const postAssetRequestSchema = z.object({

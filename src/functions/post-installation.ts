@@ -6,12 +6,12 @@ export async function postInstallation({
   id,
   installationName,
   installationSlug,
-  regionalOwnerId,
+  companyOwnerId,
 }: postInstallationRequestType) {
   await db.insert(installations).values({
     id,
     installationName,
     installationSlug,
-    regionalOwnerId,
+    companyOwnerId,
   })
 }
