@@ -1,5 +1,54 @@
 import { z } from 'zod'
 
+export const postCompanyRequestSchema = z.object({
+  id: z.string().uuid(),
+  companyName: z.string(),
+  companySlug: z.string(),
+})
+
+export const postRegionalRequestSchema = z.object({
+  id: z.string().uuid(),
+  regionalName: z.string(),
+  regionalSlug: z.string(),
+  companyOwnerId: z.string().uuid(),
+})
+
+export const postInstallationRequestSchema = z.object({
+  id: z.string().uuid(),
+  installationName: z.string(),
+  installationSlug: z.string(),
+  regionalOwnerId: z.string().uuid(),
+})
+
+export const postAssetRequestSchema = z.object({
+  id: z.string().uuid(),
+  assetName: z.string(),
+  assetSlug: z.string(),
+  installationOwnerId: z.string().uuid(),
+})
+
+export const postSensorRequestSchema = z.object({
+  id: z.string().uuid(),
+  assetOwnerId: z.string().uuid(),
+  sensorRegistryId: z.string().uuid(),
+})
+
+export const postSensorRegistryRequestSchema = z.object({
+  id: z.string().uuid(),
+  sensorName: z.string(),
+  sensorSlug: z.string(),
+  sensorShowName: z.string(),
+})
+
+export const postVariableRequestSchema = z.object({
+  id: z.string().uuid(),
+  sensorRegistryId: z.string().uuid(),
+  variableName: z.string(),
+  unit: z.string(),
+  component: z.string(),
+  fx: z.string(),
+})
+
 export const subscribeNewTokenRequestSchema = z.object({
   accessToken: z.string(),
   refreshToken: z.string(),
@@ -140,3 +189,15 @@ export const getVariablesSchema = z.object({
 export type subscribeNewTokenRequestType = z.infer<
   typeof subscribeNewTokenRequestSchema
 >
+
+export type postCompanyRequestType = z.infer<typeof postCompanyRequestSchema>
+export type postRegionalRequestType = z.infer<typeof postRegionalRequestSchema>
+export type postInstallationRequestType = z.infer<
+  typeof postInstallationRequestSchema
+>
+export type postAssetRequestType = z.infer<typeof postAssetRequestSchema>
+export type postSensorRequestType = z.infer<typeof postSensorRequestSchema>
+export type postSensorRegistryRequestType = z.infer<
+  typeof postSensorRegistryRequestSchema
+>
+export type postVariableRequestType = z.infer<typeof postVariableRequestSchema>

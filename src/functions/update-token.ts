@@ -1,11 +1,14 @@
 import { db } from '../drizzle/client'
 import { token } from '../drizzle/schema/token'
-import { subscribeNewTokenRequestType } from '../types'
+import type { subscribeNewTokenRequestType } from '../types'
 
-export async function updateToken({ accessToken, refreshToken }: subscribeNewTokenRequestType) {
+export async function updateToken({
+  accessToken,
+  refreshToken,
+}: subscribeNewTokenRequestType) {
   await db.delete(token)
   await db.insert(token).values({
     accessToken,
-    refreshToken
+    refreshToken,
   })
 }
