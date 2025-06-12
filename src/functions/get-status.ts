@@ -5,7 +5,6 @@ import {
   assets,
   companies,
   installations,
-  regionals,
   sensors,
   sensorsAlarms,
   sensorsCommunication,
@@ -13,68 +12,8 @@ import {
 } from '../drizzle/schema'
 
 export async function getStatus(companySlug: string) {
-  // const companyStatus = await db.query.companies.findMany({
-  //   where: eq(companies.companySlug, companySlug),
-  //   columns: {
-  //     id: false,
-  //   },
-  //   with: {
-  //     regionals: {
-  //       columns: {
-  //         id: false,
-  //         companyOwnerId: false,
-  //       },
-  //       with: {
-  //         installations: {
-  //           columns: {
-  //             id: false,
-  //             regionalOwnerId: false,
-  //           },
-  //           with: {
-  //             assets: {
-  //               columns: {
-  //                 id: false,
-  //                 installationOwnerId: false,
-  //               },
-  //               with: {
-  //                 sensors: {
-  //                   columns: {
-  //                     id: false,
-  //                     assetOwnerId: false,
-  //                     sensorRegistryId: false,
-  //                   },
-  //                   with: {
-  //                     sensorsRegistry: {
-  //                       columns: {
-  //                         id: false,
-  //                       },
-  //                     },
-  //                     sensorCommunication: {
-  //                       columns: {
-  //                         id: false,
-  //                         sensorOwnerId: false,
-  //                       },
-  //                     },
-  //                     sensorAlarm: {
-  //                       columns: {
-  //                         id: false,
-  //                         sensorOwnerId: false,
-  //                       },
-  //                     },
-  //                   },
-  //                 },
-  //               },
-  //             },
-  //           },
-  //         },
-  //       },
-  //     },
-  //   },
-  // })
   const status = await db
     .select({
-      regionalName: regionals.regionalName,
-      regionalSlug: regionals.regionalSlug,
       installationName: installations.installationName,
       installationSlug: installations.installationSlug,
       assetName: assets.assetName,
@@ -89,8 +28,7 @@ export async function getStatus(companySlug: string) {
       sensorCommunicationUpdatedAt: sensorsCommunication.updatedAt,
     })
     .from(companies)
-    .leftJoin(regionals, eq(companies.id, regionals.companyOwnerId))
-    .leftJoin(installations, eq(regionals.id, installations.regionalOwnerId))
+    .leftJoin(installations, eq(companies.id, installations.companyOwnerId))
     .leftJoin(assets, eq(installations.id, assets.installationOwnerId))
     .leftJoin(sensors, eq(assets.id, sensors.assetOwnerId))
     .leftJoin(
@@ -105,31 +43,24 @@ export async function getStatus(companySlug: string) {
     .where(eq(companies.companySlug, companySlug))
 
   const grouped = _(status)
-    .groupBy(r => r.regionalSlug)
-    .map((regionalRows, regionalId) => ({
-      regionalName: regionalRows[0].regionalName,
-      regionalSlug: regionalRows[0].regionalSlug,
-      installations: _(regionalRows)
-        .groupBy(r => r.installationSlug)
-        .map((installationRows, installationId) => ({
-          installationName: installationRows[0].installationName,
-          installationSlug: installationRows[0].installationSlug,
-          assets: _(installationRows)
-            .groupBy(r => r.assetSlug)
-            .map((assetRows, assetId) => ({
-              assetName: assetRows[0].assetName,
-              assetSlug: assetRows[0].assetSlug,
-              sensors: _(assetRows)
-                .groupBy(r => r.sensorSlug)
-                .map((sensorRows, sensorId) => ({
-                  sensorShowName: sensorRows[0].sensorShowName,
-                  sensorAlarmCondition: sensorRows[0].sensorAlarmCondition,
-                  sensorAlarmRecognition: sensorRows[0].sensorAlarmRecognition,
-                  sensorCommunicationStatus:
-                    sensorRows[0].sensorCommunicationStatus,
-                  sensorMuted: sensorRows[0].sensorMuted,
-                }))
-                .value(),
+    .groupBy(r => r.installationSlug)
+    .map((installationRows, installationId) => ({
+      installationName: installationRows[0].installationName,
+      installationSlug: installationRows[0].installationSlug,
+      assets: _(installationRows)
+        .groupBy(r => r.assetSlug)
+        .map((assetRows, assetId) => ({
+          assetName: assetRows[0].assetName,
+          assetSlug: assetRows[0].assetSlug,
+          sensors: _(assetRows)
+            .groupBy(r => r.sensorSlug)
+            .map((sensorRows, sensorId) => ({
+              sensorShowName: sensorRows[0].sensorShowName,
+              sensorAlarmCondition: sensorRows[0].sensorAlarmCondition,
+              sensorAlarmRecognition: sensorRows[0].sensorAlarmRecognition,
+              sensorCommunicationStatus:
+                sensorRows[0].sensorCommunicationStatus,
+              sensorMuted: sensorRows[0].sensorMuted,
             }))
             .value(),
         }))

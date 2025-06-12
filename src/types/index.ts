@@ -9,7 +9,6 @@ export const postCompanyRequestSchema = z.object({
 export const postRegionalRequestSchema = z.object({
   id: z.string().uuid(),
   regionalName: z.string(),
-  regionalSlug: z.string(),
   companyOwnerId: z.string().uuid(),
 })
 
@@ -63,25 +62,19 @@ export const getTokenResponseSchema = z.object({
 export const getStatusResponseSchema = z.object({
   status: z.array(
     z.object({
-      regionalName: z.string().nullable(),
-      regionalSlug: z.string().nullable(),
-      installations: z.array(
+      installationName: z.string().nullable(),
+      installationSlug: z.string().nullable(),
+      assets: z.array(
         z.object({
-          installationName: z.string().nullable(),
-          installationSlug: z.string().nullable(),
-          assets: z.array(
+          assetName: z.string().nullable(),
+          assetSlug: z.string().nullable(),
+          sensors: z.array(
             z.object({
-              assetName: z.string().nullable(),
-              assetSlug: z.string().nullable(),
-              sensors: z.array(
-                z.object({
-                  sensorShowName: z.string().nullable(),
-                  sensorAlarmCondition: z.string().nullable(),
-                  sensorAlarmRecognition: z.string().nullable(),
-                  sensorCommunicationStatus: z.string().nullable(),
-                  sensorMuted: z.boolean().nullable(),
-                })
-              ),
+              sensorShowName: z.string().nullable(),
+              sensorAlarmCondition: z.string().nullable(),
+              sensorAlarmRecognition: z.string().nullable(),
+              sensorCommunicationStatus: z.string().nullable(),
+              sensorMuted: z.boolean().nullable(),
             })
           ),
         })
@@ -96,7 +89,6 @@ export const getStatusParamsSchema = z.object({
 
 export const getOnlineValuesParamsSchema = z.object({
   companySlug: z.string(),
-  regionalSlug: z.string(),
   installationSlug: z.string(),
   assetSlug: z.string(),
 })
@@ -135,34 +127,28 @@ export const getRegistriesResponseSchema = z.object({
       id: z.string(),
       companyName: z.string(),
       companySlug: z.string(),
-      regionals: z.array(
+
+      installations: z.array(
         z.object({
           id: z.string(),
-          regionalName: z.string(),
-          regionalSlug: z.string(),
-          installations: z.array(
+          installationName: z.string(),
+          installationSlug: z.string(),
+          assets: z.array(
             z.object({
               id: z.string(),
-              installationName: z.string(),
-              installationSlug: z.string(),
-              assets: z.array(
+              assetName: z.string(),
+              assetSlug: z.string(),
+              sensors: z.array(
                 z.object({
                   id: z.string(),
-                  assetName: z.string(),
-                  assetSlug: z.string(),
-                  sensors: z.array(
-                    z.object({
-                      id: z.string(),
-                      sensorRegistry: z
-                        .object({
-                          sensorName: z.string(),
-                          sensorSlug: z.string(),
-                          sensorShowName: z.string(),
-                        })
-                        .nullable()
-                        .nullish(),
+                  sensorRegistry: z
+                    .object({
+                      sensorName: z.string(),
+                      sensorSlug: z.string(),
+                      sensorShowName: z.string(),
                     })
-                  ),
+                    .nullable()
+                    .nullish(),
                 })
               ),
             })

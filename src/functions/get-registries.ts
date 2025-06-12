@@ -3,34 +3,27 @@ import { db } from '../drizzle/client'
 export async function getRegistries() {
   const companyWithRelations = await db.query.companies.findMany({
     with: {
-      regionals: {
+      installations: {
         columns: {
-          companyOwnerId: false,
+          // regionalOwnerId: false,
         },
         with: {
-          installations: {
+          assets: {
             columns: {
-              regionalOwnerId: false,
+              installationOwnerId: false,
             },
             with: {
-              assets: {
-                columns: {
-                  installationOwnerId: false,
-                },
+              sensors: {
                 with: {
-                  sensors: {
-                    with:{
-                      sensorsRegistry: {
-                        columns:{
-                          id: false
-                        }
-                      }
-                    },
+                  sensorsRegistry: {
                     columns: {
-                      id: true,
-                    }
-                  }
-                }
+                      id: false,
+                    },
+                  },
+                },
+                columns: {
+                  id: true,
+                },
               },
             },
           },
