@@ -40,7 +40,7 @@ export const postSensorRegistryRequestSchema = z.object({
 })
 
 export const postVariableRequestSchema = z.object({
-  id: z.string().uuid(),
+  id: z.string(),
   sensorRegistryId: z.string().uuid(),
   variableName: z.string(),
   unit: z.string(),

@@ -22,5 +22,6 @@ export const variableRelations = relations(variables, ({ one, many }) => ({
     fields: [variables.sensorRegistriesId],
     references: [sensorsRegistries.id],
   }),
+
   onlineValues: many(onlineValues),
 }))
